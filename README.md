@@ -1,5 +1,5 @@
 <p align='center'>
-<img src="assets/logo.png" align="centr">
+<img src="https://user-images.githubusercontent.com/88227750/212110653-fdeebd39-58fc-4b8d-bdd0-c8230aa1af17.png" align="center">
 </p>
 <br>
 
@@ -54,7 +54,7 @@ $ python3 -m pip install -U PyQt6
 >## **GUI Preview**
 
 
-<img src="assets/gui.png" align="center">
+<img src="https://user-images.githubusercontent.com/88227750/212110833-f117980f-ffdd-4ab0-8c97-e6d8727642a9.png" align="center">
 
 <br>
 
