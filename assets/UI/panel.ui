@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+                border-color: rgb(0, 170, 255);
+                font: 75 italic 14pt &quot;Consolas&quot;;
+                alternate-background-color: rgb(26, 26, 26);
+                background-color: rgb(26, 26, 26)</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Product Logo"/>
+    </property>
+    <property name="whatsThis">
+     <string>
+                        &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 24pt &quot;MS Shell Dlg 2&quot;;
+                        font: 36pt &quot;Edwardian Script ITC&quot;;
+                        font-weight: 500;
+                        border-radius:15px;
+                        background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0
+                        rgba(0, 0, 0, 255), stop:0.05 rgba(14, 8, 73, 255), stop:0.36 rgba(28, 17,
+                        145, 255), stop:0.6 rgba(126, 14, 81, 255), stop:0.75 rgba(234, 11, 11,
+                        255), stop:0.79 rgba(244, 70, 5, 255), stop:0.86 rgba(255, 136, 0, 255),
+                        stop:0.935 rgba(239, 236, 55, 255));</string>
+    </property>
+    <property name="text">
+     <string>Predictor Panel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="clock">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>10</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Clock"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:20px;
+                        font: 75 italic 18pt &quot;MS Sans Serif&quot;;
+                        background-color: rgb(85, 85, 255);</string>
+    </property>
+    <property name="text">
+     <string>     clock</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="list_of_classes">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>201</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is Showing ClassList"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+                        background-color: rgb(0, 0, 0);
+                        color: rgb(255, 255, 255);
+                        font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+                        font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+                        /*background-color: rgb(85, 170, 255);*/
+                        font: 18pt &quot;Jokerman&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Items</string>
+     </property>
+     <property name="icon">
+      <iconset theme="grey">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="prediction_result_window">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>380</y>
+      <width>411</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Predicted Result Console"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+                        border: 5px solid black;
+                        font: 14pt &quot;Lucida Handwriting&quot;;
+                        background-color: rgb(62, 166, 255);
+                        color: rgb(0, 0, 0)</string>
+    </property>
+    <property name="text">
+     <string>Predicted Result : </string>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>160</y>
+      <width>13</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Vertical Scroll Bar For list"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                        selection-background-color: rgb(0, 170, 255);</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="model_path_entry">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>470</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Model Path Input Line"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{border-radius: 10px;
+border: 1px solid black;
+background-color: rgb(255, 255, 255);
+border-color: rgb(0, 170, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: black;}
+
+QLineEdit:hover{
+	background-color: rgb(170, 255, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="class_path_entry">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>510</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Class Path Input Line"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{border-radius: 10px;
+border: 1px solid black;
+background-color: rgb(255, 255, 255);
+border-color: rgb(0, 170, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: black;}
+
+QLineEdit:hover{
+	background-color: rgb(170, 255, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="path_area">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>450</y>
+      <width>521</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a List View of Entry"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="path_input">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>440</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Path Input Label"/>
+    </property>
+    <property name="text">
+     <string>Path Input</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="model_path">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>470</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Model Input Label"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                    </string>
+    </property>
+    <property name="text">
+     <string>Model Path</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="class_path">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>510</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Class Input Label"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                    </string>
+    </property>
+    <property name="text">
+     <string>Class Path</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="predict_button">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>380</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Prediction Button"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{font: 120 15pt &quot;MS Shell Dlg 2&quot;;
+                        border-radius:15px;
+                        background-color: orangered;
+                        }
+                        QPushButton:hover{
+                        background-color: orange;
+                        }</string>
+    </property>
+    <property name="text">
+     <string>Predict</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="class_path_entry_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>550</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Class Path Input Line"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{border-radius: 10px;
+border: 1px solid black;
+background-color: rgb(255, 255, 255);
+border-color: rgb(0, 170, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+color: black;}
+
+QLineEdit:hover{
+	background-color: rgb(170, 255, 255);
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="class_path_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>550</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string extracomment="#It is a Class Input Label"/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                    </string>
+    </property>
+    <property name="text">
+     <string>Image Path</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>90</y>
+      <width>411</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px;
+                        border: 2px solid white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/AMAN/Documents/img/2.png</pixmap>
+    </property>
+   </widget>
+   <zorder>path_area</zorder>
+   <zorder>logo</zorder>
+   <zorder>clock</zorder>
+   <zorder>list_of_classes</zorder>
+   <zorder>prediction_result_window</zorder>
+   <zorder>verticalScrollBar</zorder>
+   <zorder>class_path_entry</zorder>
+   <zorder>model_path_entry</zorder>
+   <zorder>path_input</zorder>
+   <zorder>model_path</zorder>
+   <zorder>class_path</zorder>
+   <zorder>predict_button</zorder>
+   <zorder>class_path_entry_2</zorder>
+   <zorder>class_path_2</zorder>
+   <zorder>label</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
