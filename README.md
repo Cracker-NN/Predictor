@@ -95,7 +95,7 @@ Usage: predictor  [ -d Directory Path ] [ -m Model Filename ] [ -c Class Filenam
 
 <br>
 
----
+
 
 <h2>Availabel Library</h2>
 
@@ -105,6 +105,8 @@ Usage: predictor  [ -d Directory Path ] [ -m Model Filename ] [ -c Class Filenam
 | Shoe Classification | classes.pkl    |  shoe_classifier.h5      | ['Ballet Flat', 'Boat', 'Brogue', 'Clog', 'Sneaker']  |    ✔️      |
 |Animal Classification| classes.pkl    |  animal_classifier.h5    | ['cane', 'cavallo', 'elefante', 'farfalla', 'gallina', 'gatto', 'mucca', 'pecora', 'ragno', 'scoiattolo'] |   ✔️  |
 | Dumb Sign Classification  | classes.pkl     | dumb-sign.h5    |   ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '_']   |   ✔️ |
+
+<br>
 
 >## **Author**
 - [Aman  Raj](https://github.com/amanraj-bose)
