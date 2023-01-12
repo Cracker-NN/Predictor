@@ -83,7 +83,7 @@ print("Prediction is :", PREDICTION)
 
 <br>
 
-<!-->## **CLI Preview**-->
+<!--    >## **CLI Preview** -->
 
 <!-- ```bash
 
