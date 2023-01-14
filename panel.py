@@ -12,6 +12,7 @@ import joblib
 from PyQt6 import QtCore, QtGui, QtWidgets
 import local
 import cv2
+import sys
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import keras.utils
 
@@ -245,7 +246,6 @@ class Ui_MainWindow(object):
 
 
 if __name__ == "__main__":
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
