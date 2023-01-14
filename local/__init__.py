@@ -19,6 +19,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import keras
 
 
+def class_loader(path:str):
+    return joblib.load(str(path))
 
 def img_decoder(model_path:str, img_path:str, classes:any, resize:tuple[int, int]=(256, 256),
                 channel:int=3):

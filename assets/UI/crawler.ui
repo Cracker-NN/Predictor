@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+     <class>MainWindow</class>
+     <widget class="QMainWindow" name="MainWindow">
+          <property name="geometry">
+               <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>632</height>
+               </rect>
+          </property>
+          <property name="windowTitle">
+               <string>MainWindow</string>
+          </property>
+          <property name="styleSheet">
+               <string notr="true">background-color: rgb(45, 45, 68);</string>
+          </property>
+          <widget class="QWidget" name="centralwidget">
+               <widget class="QWidget" name="widget" native="true">
+                    <property name="geometry">
+                         <rect>
+                              <x>30</x>
+                              <y>20</y>
+                              <width>721</width>
+                              <height>211</height>
+                         </rect>
+                    </property>
+                    <property name="styleSheet">
+                         <string notr="true">border-radius: 20px;
+                              background-color: rgb(45, 45, 0);
+                              color: #fff;</string>
+                    </property>
+                    <widget class="QLineEdit" name="url_input">
+                         <property name="geometry">
+                              <rect>
+                                   <x>240</x>
+                                   <y>10</y>
+                                   <width>461</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">QLineEdit{border-radius: 10px;
+                                   border: 1px solid black;
+                                   background-color: rgb(255, 255, 255);
+                                   border-color: rgb(0, 170, 255);
+                                   font: 10pt &quot;MS Shell Dlg 2&quot;;
+                                   color: black;}
+                                   QLineEdit:hover{
+                                   background-color: rgb(170, 255, 255);}</string>
+                         </property>
+                    </widget>
+                    <widget class="QLineEdit" name="directory_input">
+                         <property name="geometry">
+                              <rect>
+                                   <x>240</x>
+                                   <y>50</y>
+                                   <width>461</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">QLineEdit{border-radius: 10px;
+                                   border: 1px solid black;
+                                   background-color: rgb(255, 255, 255);
+                                   border-color: rgb(0, 170, 255);
+                                   font: 10pt &quot;MS Shell Dlg 2&quot;;
+                                   color: black;}
+                                   QLineEdit:hover{
+                                   background-color: rgb(170, 255, 255);}</string>
+                         </property>
+                    </widget>
+                    <widget class="QLineEdit" name="number_input">
+                         <property name="geometry">
+                              <rect>
+                                   <x>240</x>
+                                   <y>100</y>
+                                   <width>101</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">QLineEdit{border-radius: 10px;
+                                   border: 1px solid black;
+                                   background-color: rgb(255, 255, 255);
+                                   border-color: rgb(0, 170, 255);
+                                   font: 10pt &quot;MS Shell Dlg 2&quot;;
+                                   color: black;}
+                                   QLineEdit:hover{
+                                   background-color: rgb(170, 255, 255);}</string>
+                         </property>
+                    </widget>
+                    <widget class="QLineEdit" name="name_input">
+                         <property name="geometry">
+                              <rect>
+                                   <x>590</x>
+                                   <y>100</y>
+                                   <width>101</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">QLineEdit{border-radius: 10px;
+                                   border: 1px solid black;
+                                   background-color: rgb(255, 255, 255);
+                                   border-color: rgb(0, 170, 255);
+                                   font: 10pt &quot;MS Shell Dlg 2&quot;;
+                                   color: black;}
+                                   QLineEdit:hover{
+                                   background-color: rgb(170, 255, 255);}</string>
+                         </property>
+                    </widget>
+                    <widget class="QComboBox" name="format_entry">
+                         <property name="geometry">
+                              <rect>
+                                   <x>240</x>
+                                   <y>150</y>
+                                   <width>111</width>
+                                   <height>41</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">QComboBox{
+                                   border-radius: 10px;
+                                   border: 1px solid black;
+                                   background-color: rgb(255, 255, 255);
+                                   border-color: rgb(0, 170, 255);
+                                   font: 10pt &quot;MS Shell Dlg 2&quot;;
+                                   color: black
+                                   }
+                                   QLineEdit:hover{
+                                   background-color: rgb(170, 255, 255);}</string>
+                         </property>
+                         <item>
+                              <property name="text">
+                                   <string>jpeg</string>
+                              </property>
+                         </item>
+                         <item>
+                              <property name="text">
+                                   <string>png</string>
+                              </property>
+                         </item>
+                         <item>
+                              <property name="text">
+                                   <string>bmp</string>
+                              </property>
+                         </item>
+                         <item>
+                              <property name="text">
+                                   <string>jpg</string>
+                              </property>
+                         </item>
+                    </widget>
+                    <widget class="QLabel" name="url">
+                         <property name="geometry">
+                              <rect>
+                                   <x>160</x>
+                                   <y>10</y>
+                                   <width>51</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                                   color: #fff;
+                                   padding-left: 5px;</string>
+                         </property>
+                         <property name="text">
+                              <string>Url</string>
+                         </property>
+                    </widget>
+                    <widget class="QLabel" name="directory">
+                         <property name="geometry">
+                              <rect>
+                                   <x>130</x>
+                                   <y>50</y>
+                                   <width>101</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                                   color: #fff;
+                                   padding-left: 5px;</string>
+                         </property>
+                         <property name="text">
+                              <string>Directory</string>
+                         </property>
+                    </widget>
+                    <widget class="QLabel" name="number">
+                         <property name="geometry">
+                              <rect>
+                                   <x>120</x>
+                                   <y>100</y>
+                                   <width>91</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                                   color: #fff;
+                                   padding-left: 5px;</string>
+                         </property>
+                         <property name="text">
+                              <string>Number</string>
+                         </property>
+                    </widget>
+                    <widget class="QLabel" name="name">
+                         <property name="geometry">
+                              <rect>
+                                   <x>500</x>
+                                   <y>100</y>
+                                   <width>71</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                                   color: #fff;
+                                   padding-left: 5px;</string>
+                         </property>
+                         <property name="text">
+                              <string>Name</string>
+                         </property>
+                    </widget>
+                    <widget class="QLabel" name="format">
+                         <property name="geometry">
+                              <rect>
+                                   <x>130</x>
+                                   <y>150</y>
+                                   <width>91</width>
+                                   <height>31</height>
+                              </rect>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">font: 15pt &quot;MS Shell Dlg 2&quot;;
+                                   color: #fff;
+                                   padding-left: 5px;</string>
+                         </property>
+                         <property name="text">
+                              <string>Format</string>
+                         </property>
+                    </widget>
+                    <widget class="QPushButton" name="pushButton">
+                         <property name="geometry">
+                              <rect>
+                                   <x>550</x>
+                                   <y>150</y>
+                                   <width>151</width>
+                                   <height>41</height>
+                              </rect>
+                         </property>
+                         <property name="cursor">
+                              <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="styleSheet">
+                              <string notr="true">QPushButton{
+                                   padding: 10px 30px;
+                                   background-color: transparent;
+                                   border: 1px solid #fff;
+                                   display: inline-block;
+                                   background: none;
+                                   color: #fff;
+                                   border-radius: 5px;
+                                   font-size: 13pt;
+                                   font-weight: 500;
+                                   transition: 2ms ease-in;
+                                   cursor: pointer;
+                                   }
+                                   QPushButton:hover{
+                                   background-color: #fff;
+                                   color: #000;
+                                   }</string>
+                         </property>
+                         <property name="text">
+                              <string>Crawling</string>
+                         </property>
+                    </widget>
+               </widget>
+               <widget class="QScrollArea" name="terminal">
+                    <property name="geometry">
+                         <rect>
+                              <x>30</x>
+                              <y>260</y>
+                              <width>731</width>
+                              <height>341</height>
+                         </rect>
+                    </property>
+                    <property name="styleSheet">
+                         <string notr="true">background-color: rgb(45, 0, 0);
+                              border-radius: 5px;
+                              color: rgb(0, 255, 0);</string>
+                    </property>
+                    <property name="widgetResizable">
+                         <bool>true</bool>
+                    </property>
+                    <widget class="QWidget" name="scrollAreaWidgetContents">
+                         <property name="geometry">
+                              <rect>
+                                   <x>0</x>
+                                   <y>0</y>
+                                   <width>731</width>
+                                   <height>341</height>
+                              </rect>
+                         </property>
+                         <widget class="QScrollBar" name="verticalScrollBar">
+                              <property name="geometry">
+                                   <rect>
+                                        <x>720</x>
+                                        <y>0</y>
+                                        <width>11</width>
+                                        <height>361</height>
+                                   </rect>
+                              </property>
+                              <property name="styleSheet">
+                                   <string notr="true">QScrollBar:vertical {
+                                        border: none;
+                                        background: rgb(45, 45, 68);
+                                        width: 14px;
+                                        margin: 15px 0 15px 0;
+                                        border-radius: 0px;
+                                        }
+
+                                        /* HANDLE BAR VERTICAL */
+                                        QScrollBar::handle:vertical {
+                                        background-color: rgb(80, 80, 122);
+                                        min-height: 30px;
+                                        border-radius: 7px;
+                                        }
+                                        QScrollBar::handle:vertical:hover{
+                                        background-color: rgb(255, 0, 127);
+                                        }
+                                        QScrollBar::handle:vertical:pressed {
+                                        background-color: rgb(185, 0, 92);
+                                        }
+
+                                        /* BTN TOP - SCROLLBAR */
+                                        QScrollBar::sub-line:vertical {
+                                        border: none;
+                                        background-color: rgb(59, 59, 90);
+                                        height: 15px;
+                                        border-top-left-radius: 7px;
+                                        border-top-right-radius: 7px;
+                                        subcontrol-position: top;
+                                        subcontrol-origin: margin;
+                                        }
+                                        QScrollBar::sub-line:vertical:hover {
+                                        background-color: rgb(255, 0, 127);
+                                        }
+                                        QScrollBar::sub-line:vertical:pressed {
+                                        background-color: rgb(185, 0, 92);
+                                        }
+                                        /* RESET ARROW */
+                                        QScrollBar::up-arrow:vertical,
+                                        QScrollBar::down-arrow:vertical {
+                                        background: none;
+                                        }
+                                        QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+                                        {
+                                        background: none;
+                                        }
+
+                                        QScrollBar:vertical {
+                                        border: none;
+                                        background: rgb(56, 56, 85);}
+                                   </string>
+                              </property>
+                              <property name="orientation">
+                                   <enum>Qt::Vertical</enum>
+                              </property>
+                         </widget>
+                         <widget class="QLabel" name="label">
+                              <property name="geometry">
+                                   <rect>
+                                        <x>10</x>
+                                        <y>10</y>
+                                        <width>691</width>
+                                        <height>16</height>
+                                   </rect>
+                              </property>
+                              <property name="text">
+                                   <string>link</string>
+                              </property>
+                         </widget>
+                    </widget>
+               </widget>
+          </widget>
+     </widget>
+     <resources />
+     <connections />
+</ui>

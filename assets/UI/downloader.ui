@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1348</width>
-    <height>857</height>
+    <width>1023</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,18 +17,18 @@
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="main_frame">
     <property name="geometry">
      <rect>
-      <x>-10</x>
-      <y>0</y>
-      <width>1511</width>
-      <height>441</height>
+      <x>-30</x>
+      <y>-141</y>
+      <width>1421</width>
+      <height>681</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(4, 122, 237);
-font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+font-family: Segoe, Tahoma, Geneva, Verdana, sans-serif;
 color: rgb(255, 255, 255);
 line-height: 1.6;</string>
     </property>
@@ -38,12 +38,12 @@ line-height: 1.6;</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="logo">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>221</width>
+       <x>60</x>
+       <y>160</y>
+       <width>281</width>
        <height>71</height>
       </rect>
      </property>
@@ -53,18 +53,18 @@ line-height: 1.2;
 margin: 10px 0;
 color: rgb(255, 255, 255);
 font-size: 35pt;
-font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;</string>
+font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;</string>
      </property>
      <property name="text">
-      <string>Modulas</string>
+      <string>The Predictor</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="home_logo">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>170</y>
-       <width>181</width>
+       <x>70</x>
+       <y>350</y>
+       <width>121</width>
        <height>61</height>
       </rect>
      </property>
@@ -74,25 +74,24 @@ color: rgb(255, 255, 255);
 font-weight: 300;
 line-height: 1.2;
 margin: 10px 0;
-font-family: &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;</string>
+font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;</string>
      </property>
      <property name="text">
       <string>Home</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="info">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>250</y>
-       <width>401</width>
-       <height>101</height>
+       <x>70</x>
+       <y>440</y>
+       <width>411</width>
+       <height>111</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">margin: 20px 0;
-font-size: 12pt;
-</string>
+font-size: 12pt;</string>
      </property>
      <property name="text">
       <string>Hello, User, Thank's For Downloading Our Software 🎉.
@@ -100,12 +99,12 @@ It is make easy the deep/machine learning task's.
 I hope, It will make your Job Easier🙏.</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="Documentation_button">
+    <widget class="QPushButton" name="documentation_button">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>360</y>
-       <width>181</width>
+       <x>100</x>
+       <y>580</y>
+       <width>191</width>
        <height>51</height>
       </rect>
      </property>
@@ -135,13 +134,13 @@ QPushButton:hover{
       <string>Documentation</string>
      </property>
     </widget>
-    <widget class="QWidget" name="widget" native="true">
+    <widget class="QWidget" name="card_widget" native="true">
      <property name="geometry">
       <rect>
-       <x>950</x>
-       <y>70</y>
-       <width>311</width>
-       <height>351</height>
+       <x>700</x>
+       <y>290</y>
+       <width>271</width>
+       <height>291</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -156,15 +155,14 @@ top: 60px;
 height: 350px;
 width: 400px;
 padding: 40px;
-z-index: 100;
-</string>
+z-index: 100;</string>
      </property>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="suggetion_logo">
       <property name="geometry">
        <rect>
-        <x>-20</x>
-        <y>30</y>
-        <width>221</width>
+        <x>-30</x>
+        <y>20</y>
+        <width>251</width>
         <height>51</height>
        </rect>
       </property>
@@ -179,35 +177,13 @@ font-size: 20pt;</string>
        <string>Suggetions</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QLabel" name="suggetion_info">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>272</y>
-        <width>161</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 5px;
-background-color: rgb(4, 122, 237);
-color: #fff;
-font-size: 10.5pt;</string>
-      </property>
-      <property name="text">
-       <string>Feedback</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_5">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>80</y>
-        <width>291</width>
-        <height>211</height>
+        <x>-20</x>
+        <y>40</y>
+        <width>311</width>
+        <height>241</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -221,23 +197,23 @@ Cutomizing the Download Panel.
 and change download 
 auto save path to 
 your destination
-`Setting &gt; Configuration`.</string>
+`Setting &amp; Configuration`.</string>
       </property>
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="widget_2" native="true">
+   <widget class="QWidget" name="break_widget" native="true">
     <property name="geometry">
      <rect>
-      <x>-30</x>
-      <y>439</y>
-      <width>1371</width>
-      <height>61</height>
+      <x>-70</x>
+      <y>540</y>
+      <width>1151</width>
+      <height>80</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QWidget{
-    content: &quot;&quot;;
+    content: ' ';;
     position: absolute;
     height: 100px;
     bottom: -70px;
@@ -248,405 +224,129 @@ your destination
 }</string>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_2">
+   <widget class="QLabel" name="bottom_frame">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>500</y>
-      <width>1341</width>
-      <height>311</height>
+      <x>-164</x>
+      <y>650</y>
+      <width>1311</width>
+      <height>61</height>
      </rect>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
+    <property name="text">
+     <string>TextLabel</string>
     </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+   </widget>
+   <widget class="QPushButton" name="model_launcher">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>650</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
     </property>
-    <widget class="QLabel" name="label_6">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>0</y>
-       <width>191</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: none;
-font: bolder &quot;Algerian&quot;;
-color: grey;
-font-weight:500;
-font-size:30px;
-</string>
-     </property>
-     <property name="text">
-      <string>Recommded</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="widget_3" native="true">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>40</y>
-       <width>191</width>
-       <height>251</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QWidget{
-border-radius: 15px;
-border: 3px solid grey;
-color: grey;
-background-color: #fff;
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid #fea44c;
+    color: #fea44c;
+    box-shadow: inset 0 0 0 0.15em #fea44c, 0 2px 20px #563719;
+    text-shadow: 0 2px 5px #563719;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transform-box: 13px;
+    transition: transform 0.2s ease-in;
+	font: 12pt MS Shell Dlg 2;
+	font-weight: 500;
 }
-QWidget:hover{
-background: rgb(4, 122, 237);
-color: #fff;
-border: 3px solid white;
+QPushButton:hover{
+	background-color: #fea44c;
+	color: #fff;
+	box-shadow: inset 0 0 0 0.15em #fea44c, 0 2px 20px #563719;
 }</string>
-     </property>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>120</y>
-        <width>191</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-border: none;
-background: none;
-color: gray;
-font-size: 10pt;
-align:center;
-justify-content:center;
-margin: 10px;
+    </property>
+    <property name="text">
+     <string>Model Launcher</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="image_launcher">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>650</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	border: 2px solid cyan;
+    color: cyan;
+    box-shadow: inset 0 0 0 0.15em cyan, 0 2px 20px #563719;
+    text-shadow: 0 2px 5px cyan;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transform-box: 13px;
+    transition: transform 0.2s ease-in;
+	font: 12pt MS Shell Dlg 2;
+	font-weight: 500;
 }
-</string>
-      </property>
-      <property name="text">
-       <string>Dumb-Sign Classifier,
-For Communicating 
-with Dumb Peoples.
-more info.... </string>
-      </property>
-     </widget>
-     <widget class="QGraphicsView" name="graphicsView">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>151</width>
-        <height>91</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background-color: transparent;</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="widget_4" native="true">
-     <property name="geometry">
-      <rect>
-       <x>320</x>
-       <y>40</y>
-       <width>191</width>
-       <height>251</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QWidget{
-border-radius: 15px;
-border: 3px solid grey;
-color: grey;
-background-color: #fff;
-}
-QWidget:hover{
-background: rgb(4, 122, 237);
-color: #fff;
-border: 3px solid white;
+QPushButton:hover{
+	background-color: cyan;
+	color: #fff;
+	box-shadow: inset 0 0 0 0.15em #fea44c, 0 2px 20px #563719;
 }</string>
-     </property>
-     <widget class="QLabel" name="label_8">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>120</y>
-        <width>191</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-border: none;
+    </property>
+    <property name="text">
+     <string>Image Launcher</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="internet_connection">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: black;
 background: none;
-color: gray;
-font-size: 10pt;
-align:center;
-justify-content:center;
-margin: 10px;
-}
+border-radius: 10px;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+borde-bottomr: 2px solid rgb(0, 0, 0);
 </string>
-      </property>
-      <property name="text">
-       <string>Dumb-Sign Classifier,
-For Communicating 
-with Dumb Peoples.
-more info.... </string>
-      </property>
-     </widget>
-     <widget class="QGraphicsView" name="graphicsView_2">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>151</width>
-        <height>91</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background-color: transparent;</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="widget_5" native="true">
-     <property name="geometry">
-      <rect>
-       <x>830</x>
-       <y>40</y>
-       <width>191</width>
-       <height>251</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QWidget{
-border-radius: 15px;
-border: 3px solid grey;
-color: grey;
-background-color: #fff;
-}
-QWidget:hover{
-background: rgb(4, 122, 237);
-color: #fff;
-border: 3px solid white;
-}</string>
-     </property>
-     <widget class="QLabel" name="label_9">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>120</y>
-        <width>191</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-border: none;
-background: none;
-color: gray;
-font-size: 10pt;
-align:center;
-justify-content:center;
-margin: 10px;
-}
-</string>
-      </property>
-      <property name="text">
-       <string>Dumb-Sign Classifier,
-For Communicating 
-with Dumb Peoples.
-more info.... </string>
-      </property>
-     </widget>
-     <widget class="QGraphicsView" name="graphicsView_3">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>151</width>
-        <height>91</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background-color: transparent;</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="widget_6" native="true">
-     <property name="geometry">
-      <rect>
-       <x>1100</x>
-       <y>40</y>
-       <width>191</width>
-       <height>251</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QWidget{
-border-radius: 15px;
-border: 3px solid grey;
-color: grey;
-background-color: #fff;
-}
-QWidget:hover{
-background: rgb(4, 122, 237);
-color: #fff;
-border: 3px solid white;
-}</string>
-     </property>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>120</y>
-        <width>191</width>
-        <height>121</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel{
-border: none;
-background: none;
-color: gray;
-font-size: 10pt;
-align:center;
-justify-content:center;
-margin: 10px;
-}
-</string>
-      </property>
-      <property name="text">
-       <string>Dumb-Sign Classifier,
-For Communicating 
-with Dumb Peoples.
-more info.... </string>
-      </property>
-     </widget>
-     <widget class="QGraphicsView" name="graphicsView_4">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>151</width>
-        <height>91</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background-color: transparent;</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="Line" name="line">
-     <property name="geometry">
-      <rect>
-       <x>590</x>
-       <y>30</y>
-       <width>181</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: none;
-font: bolder;</string>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
+    </property>
+    <property name="text">
+     <string>Internet Connection</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="on_off">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>656</y>
+      <width>29</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 0);
+font: 500 12pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1348</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuFile">
-    <property name="title">
-     <string>File</string>
-    </property>
-    <addaction name="actionExit"/>
-   </widget>
-   <widget class="QMenu" name="menuEdit">
-    <property name="title">
-     <string>Edit</string>
-    </property>
-    <addaction name="actionCut"/>
-    <addaction name="actionCopy"/>
-    <addaction name="actionPaste"/>
-    <addaction name="separator"/>
-    <addaction name="actionAbout"/>
-   </widget>
-   <widget class="QMenu" name="menuSettings">
-    <property name="title">
-     <string>Settings</string>
-    </property>
-    <addaction name="actionTheme"/>
-    <addaction name="separator"/>
-    <addaction name="actionConfiguration"/>
-    <addaction name="actionFont_Setting"/>
-   </widget>
-   <addaction name="menuFile"/>
-   <addaction name="menuEdit"/>
-   <addaction name="menuSettings"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionSetting">
-   <property name="text">
-    <string>Setting</string>
-   </property>
-  </action>
-  <action name="actionTheme">
-   <property name="text">
-    <string>Theme</string>
-   </property>
-  </action>
-  <action name="actionConfiguration">
-   <property name="text">
-    <string>Configuration</string>
-   </property>
-  </action>
-  <action name="actionCut">
-   <property name="text">
-    <string>Cut</string>
-   </property>
-  </action>
-  <action name="actionCopy">
-   <property name="text">
-    <string>Copy</string>
-   </property>
-  </action>
-  <action name="actionPaste">
-   <property name="text">
-    <string>Paste</string>
-   </property>
-  </action>
-  <action name="actionFont_Setting">
-   <property name="text">
-    <string>Font Setting</string>
-   </property>
-  </action>
-  <action name="actionExit">
-   <property name="text">
-    <string>Exit</string>
-   </property>
-  </action>
-  <action name="actionAbout">
-   <property name="text">
-    <string>About</string>
-   </property>
-  </action>
  </widget>
  <resources/>
  <connections/>
