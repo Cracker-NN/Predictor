@@ -6,15 +6,15 @@
 
 <p align='center'>
     <a href='#'><img src='https://img.shields.io/badge/License-MIT-brightgreen'></a>
-    <a href='#'><img src='https://img.shields.io/badge/Platform-Linux%20Based-yellow'></a>
+    <a href='#'><img src='https://img.shields.io/badge/Platform-Linux%20&%20Windows%20Based-yellow'></a>
     <a href='#'><img src='https://img.shields.io/badge/Version-0.1-red'></a>
     <br>
     <a href='#'><img src='https://img.shields.io/badge/Author-Aman%20Raj-orange'></a>
     <a href='https://www.python.org/'><img src='https://img.shields.io/badge/Python-%3E%3D3.9-blue'></a>
-    <a href='https://github.com/amanraj-bose'><img src='https://img.shields.io/badge/Author-Aman%20Raj-orange'></a>
+    <img src='https://img.shields.io/badge/Maintained%3F-yes-green.svg'>
     <br>
-    <a href='https://twitter.com/amanraj_Phunish'><img src='https://img.shields.io/twitter/follow/amanraj_Phunish?style=social'></a>
-    <a href='https://github.com/Cracker-NN'><img src='https://img.shields.io/github/followers/amanraj-bose?style=social'></a>
+    <a href='https://twitter.com/amanraj_Phunish'><img src='https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white'></a>
+    <a href='https://github.com/Cracker-NN'><img src='https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white'></a>
     <a href='https://en.wikipedia.org/wiki/India'><img src='https://img.shields.io/badge/Made%20In-India-orange'></a>
 </p>
 
@@ -30,34 +30,86 @@
 <!-- - **CLI** -->
 
 >## **Installation**
-- **Automate Installation**
-```bash
-$ chmod +x setup.sh
-$ sudo ./setup.sh
+>> # **Windows**
 ```
-- **Python Method**
-```bash
-$ python3 -m pip install -r requirements.txt
+If you're Windows User then You wil need to install some packages from the Browser.
 ```
-- **Linux Packages**
-```bash
-$ sudo apt install python3
-$ sudo apt install python3-pip
-```
-- **Python Library**
-```bash
-$ python3 -m pip install -U joblib
-$ python3 -m pip install -U numpy
-$ python3 -m pip install -U keras
-$ python3 -m pip install -U opencv-python
-$ python3 -m pip install -U PyQt6
-```
->## **GUI Preview**
+**Python Installation**
 
+- [Python](https://www.python.org/downloads/)
 
-<img src="https://user-images.githubusercontent.com/88227750/212110833-f117980f-ffdd-4ab0-8c97-e6d8727642a9.png" align="center">
+**Run The Following Commands on Your `CMD/Powershell` :**
 
-<br>
+```powershell
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\USERNAME> cd Predictor
+PS C:\Users\USERNAME> pip install -r requirements.txt
+PS C:\Users\USERNAME> python setup.py
+```
+
+*If any TroubleShoot Happened Then*
+
+```powershell
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\USERNAME> pip install joblib
+PS C:\Users\USERNAME> pip install opencv-python
+PS C:\Users\USERNAME> pip install numpy
+PS C:\Users\USERNAME> pip install PyQt6
+PS C:\Users\USERNAME> pip install beautifulsoup4
+PS C:\Users\USERNAME> pip install requests
+PS C:\Users\USERNAME> pip install tensorflow
+```
+
+**Now Starting it :**
+```powershell
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\USERNAME> python launcher.py
+```
+> ## **Linux**
+
+**Run Following Commands :**
+```bash
+$ git clone https://github.com/Cracker-NN/Predictor.git
+$ cd Predictor
+$ chmod +x setup.py
+$ sudo apt install -y python3
+$ python3 setup.py
+```
+*If you have getting any error then you will install manually some packages :*
+```bash
+$ sudo apt install -y python3
+$ sudo apt install -y python3-pip
+$ sudo apt install -y gcc
+$ cd Predictor
+$ pip3 install -r requirements.txt
+```
+*If Module Error Then*
+```bash
+$ pip3 install joblib
+$ pip3 install opencv-python
+$ pip3 install numpy
+$ pip3 install PyQt6
+$ pip3 install beautifulsoup4
+$ pip3 install requests
+$ pip3 install tensorflow
+```
+**Now Starting It :**
+
+```bash
+$ python3 launcher.py
+```
 
 >## **Code Preview**
 
@@ -80,23 +132,7 @@ PREDICTION = local.img_decoder(
 print("Prediction is :", PREDICTION)
 ```
 *If You have any Confusion then only over write the Variables `DIRECTORY`*
-
 <br>
-
-<!--    >## **CLI Preview** -->
-
-<!-- ```bash
-
-$ python3 predictor --help
-
-Usage: predictor  [ -d Directory Path ] [ -m Model Filename ] [ -c Class Filename ] [ -i Image Filename ]
-
-``` -->
-
-<br>
-
-
-
 <h2>Availabel Library</h2>
 
 
@@ -119,3 +155,5 @@ Usage: predictor  [ -d Directory Path ] [ -m Model Filename ] [ -c Class Filenam
 
 - [Github](https://github.com/amanraj-bose)
 - [Twitter](https://twitter.com/amanraj_Phunish)
+
+

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # _*_ utf-8 _*_
 # @uthor : Aman Raj
 # Filename : local (__init__.py)

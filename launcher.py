@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
 # _*_ utf-8 _*_
 # @uthor : Aman Raj
 # Filename : local (panel.py)
 # File Modified : 09/01/2023
+#!/usr/bin/env python3
 
 from PyQt6 import QtCore, QtGui, QtWidgets
 import os
