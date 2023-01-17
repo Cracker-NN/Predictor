@@ -96,3 +96,21 @@ def download(url,  no:int=5, save_format:str='jpeg', save_prefix:str='image', sa
     print("\033[91mImages is Downloaded")
     final_time = int(int(time.strftime('%S'))-starting_time)
     print(f"\033[1;33mTotal Time Taken : \033[1;36m{math.gcd(final_time)}")
+    
+def sigmoid(model_path:str, img_path:str, classes:any, resize:tuple[int, int]=(256, 256), channel:int=3):
+    model = keras.models.load_model( str( model_path ) )
+    ext = joblib.load( os.path.join( "local", "extensions.pkl" ) )
+    if imghdr.what( img_path ) not in ext:
+        raise Exception( "File Extension Isn't Supported..." )
+    else:
+        img_path = img_path
+    classes = joblib.load( classes )
+    img = cv2.imread( img_path )
+    img = cv2.resize( img, resize )
+    img = img.reshape( tuple( [1] + list( resize ) + [int( channel )] ) )
+    img = img / 255
+    prediction = model.predict( img, verbose=0 )*100
+    if float(prediction) < 50:
+        return  np.array(classes[0])
+    else:
+        return np.array(classes[1])
