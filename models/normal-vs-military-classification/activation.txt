@@ -1,0 +1,3 @@
+Name: sigmoid
+Other > 0.50(50)
+Military < 0.50 (50)
